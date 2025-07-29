@@ -14,17 +14,6 @@ void main() {
   }
 }
 
-double check(double currentBalance, double amount) {
-  if (amount > 0) {
-    double newBalance = currentBalance - amount;
-    print("Withdraw : ${amount.toStringAsFixed(2)}");
-    print("New Balance : ${newBalance.toStringAsFixed(2)}");
-    return newBalance;
-  }else {
-    print("Invalid withdraw amount. Must be greater than 0.");
-    return currentBalance;
-  }
-}
 double deposit(double currentBalance, double amount) {
   if (amount > 0) {
     double newBalance = currentBalance + amount;
